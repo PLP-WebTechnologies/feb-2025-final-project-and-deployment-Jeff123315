@@ -1,0 +1,36 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #333;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+/* Mobile First Approach */
+@media (min-width: 768px) {
+    /* Tablet styles */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop styles */
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
